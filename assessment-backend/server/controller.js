@@ -56,7 +56,7 @@ module.exports = {
     ];
 
         let randomIndex = Math.floor(Math.random() * affirmations.length);
-        let randomAffirmation = affirmations[randomAffirmation];
+        let randomAffirmation = affirmations[randomIndex];
 
         res.status(200).send(randomQuote);
     },
@@ -71,7 +71,7 @@ module.exports = {
     ];
 
     let randomIndex = Math.floor(Math.random() * positives.length);
-    let randomPositive = positives[randomPositive];
+    let randomPositive = positives[randomIndex];
 
     res.status(200).send(randomQuote);
     },
@@ -88,7 +88,7 @@ module.exports = {
     ];
 
     let randomIndex = Math.floor(Math.random() * loves.length);
-    let randomLove = loves[randomLove];
+    let randomLove = loves[randomIndex];
 
     res.status(200).send(randomLove);
     },

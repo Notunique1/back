@@ -15,7 +15,7 @@ const getCompliment = () => {
     });
 };
 
-complimentBtnBtn.addEventListener('click', getCompliment)
+complimentBtn.addEventListener('click', getCompliment)
 
 const getFortune = () => {
     axios.get("http://localhost:4000/api/fortune/")
